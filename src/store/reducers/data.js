@@ -1,7 +1,7 @@
 import Axios from 'axios';
 import { createSlice } from '@reduxjs/toolkit';
 
-Axios.get('http://localhost:3000/data')
+Axios.get('https://my-stackline-api.herokuapp.com/data')
   .then((res) => {
     localStorage.setItem('product', JSON.stringify(res.data));
   })
