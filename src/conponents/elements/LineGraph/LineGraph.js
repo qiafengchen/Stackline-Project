@@ -5,11 +5,12 @@ import './LineGraph.css';
 
 const ApexChart = () => {
   const product = useSelector((state) => state.product);
+
   const [state, setState] = useState({
     series: [
       {
         name: product.title,
-        data: product.sales.map((el) => el.retailSales),
+        data: product ? product?.sales?.map((el) => el.retailSales) : [],
       },
     ],
     options: {
