@@ -27,14 +27,14 @@ export default function DataTable() {
 
   React.useEffect(() => {
     setRows(
-      product.sales?.map((el) => {
+      product?.sales?.map((el) => {
         return {
           id: uuid(),
           ...el,
         };
       })
     );
-  }, [product.sales]);
+  }, [product?.sales]);
 
   return (
     <div style={{ height: 400, width: '100%' }}>

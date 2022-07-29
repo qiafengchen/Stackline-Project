@@ -48,7 +48,7 @@ const ApexChart = () => {
       ...prev,
       series: [
         {
-          name: product.title,
+          name: product?.title,
           data: product?.sales?.map((el) => el.retailSales),
         },
       ],

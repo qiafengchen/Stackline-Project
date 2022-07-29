@@ -16,7 +16,7 @@ const Analytics = () => {
         <text className={classes.title}>{product?.title}</text>
         <text className={classes.subtitle}>{product?.subtitle}</text>
         <ul>
-          {product.tags?.map((el) => (
+          {product?.tags.map((el) => (
             <li className={classes.tags}>{el}</li>
           ))}
         </ul>
