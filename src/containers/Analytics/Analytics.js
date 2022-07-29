@@ -12,9 +12,9 @@ const Analytics = () => {
   return (
     <div className={classes.main}>
       <div className={classes.productOverview}>
-        <img className={classes.img} src={product.image} alt="title" />
-        <text className={classes.title}>{product.title}</text>
-        <text className={classes.subtitle}>{product.subtitle}</text>
+        <img className={classes.img} src={product?.image} alt="title" />
+        <text className={classes.title}>{product?.title}</text>
+        <text className={classes.subtitle}>{product?.subtitle}</text>
         <ul>
           {product.tags?.map((el) => (
             <li className={classes.tags}>{el}</li>

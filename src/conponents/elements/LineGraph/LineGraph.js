@@ -9,7 +9,7 @@ const ApexChart = () => {
   const [state, setState] = useState({
     series: [
       {
-        name: product.title,
+        name: product?.title,
         data: [],
       },
     ],
