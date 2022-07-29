@@ -10,7 +10,7 @@ const ApexChart = () => {
     series: [
       {
         name: product.title,
-        data: product ? product?.sales?.map((el) => el.retailSales) : [],
+        data: product?.sales?.map((el) => el.retailSales),
       },
     ],
     options: {
