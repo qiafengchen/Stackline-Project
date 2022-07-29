@@ -24,7 +24,7 @@ const Analytics = () => {
           onClick={refreshPage}
           style={product ? { display: 'none' } : {}}
         >
-          GET REPORT
+          GENERATE REPORT
         </button>
         <text className={classes.title}>{product?.title}</text>
         <text className={classes.subtitle}>{product?.subtitle}</text>
