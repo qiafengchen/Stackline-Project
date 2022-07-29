@@ -40,7 +40,7 @@ export default function DataTable() {
     <div style={{ height: 400, width: '100%' }}>
       <DataGrid
         className="table"
-        rows={rows}
+        rows={rows || []}
         columns={columns}
         pageSize={5}
         rowsPerPageOptions={[5]}
