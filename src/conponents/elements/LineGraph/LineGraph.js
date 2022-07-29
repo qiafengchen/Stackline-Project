@@ -10,7 +10,7 @@ const ApexChart = () => {
     series: [
       {
         name: product.title,
-        data: product?.sales?.map((el) => el.retailSales),
+        data: [],
       },
     ],
     options: {
@@ -42,6 +42,18 @@ const ApexChart = () => {
       },
     },
   });
+
+  React.useEffect(() => {
+    setState((prev) => ({
+      ...prev,
+      series: [
+        {
+          name: product.title,
+          data: product?.sales?.map((el) => el.retailSales),
+        },
+      ],
+    }));
+  }, [product]);
 
   return (
     <div className="chart">
